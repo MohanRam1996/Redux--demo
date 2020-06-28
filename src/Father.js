@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import './App.css';
 import Child from "./Child";
 
+//Note the father component does not connect to the store 
+//it is just used to call the child component
+
 class Father extends Component {
   render (){
   return (

@@ -12,6 +12,8 @@ const store = createStore(rootReducer, middlewares);
 
 ReactDOM.render(
   <React.StrictMode>
+    {/* The provider will allow all components mentioned in it 
+    to acess the store */}
     <Provider store={store}>
       <App />
     </Provider>

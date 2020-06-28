@@ -15,9 +15,11 @@ class GrandFather extends Component {
     };
   }
   handleChange = (event) => {
+    //setting value in state variable 
     this.setState({ item: event.target.value });
   };
   handleClick = () => {
+    //sending data to the store 
     sendDataToStore(this.props.dispatch, this.state.item);
   };
 
@@ -31,7 +33,6 @@ class GrandFather extends Component {
         <br />
         <br />
         Entered value:&nbsp;{this.state.item}
-       
         <br />
         <br />
         <Father />

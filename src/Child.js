@@ -4,6 +4,8 @@ import { connect } from "react-redux";
 
 class Child extends Component {
   render() {
+    //the data from the store is received as props and 
+    //displayed here
     const { Item } = this.props;
     return (
       <div className="Child">
